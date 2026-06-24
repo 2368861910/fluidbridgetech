@@ -1,0 +1,178 @@
+/* FBT custom overrides — loaded after styles.css */
+
+html {
+  scroll-padding-top: 5.5rem;
+}
+
+section.page-section {
+  scroll-margin-top: 5.5rem;
+}
+
+/* ── Dividers (PPT point 3 / 5 / 18) ── */
+.fbt-divider {
+  display: block;
+  width: 3.25rem;
+  height: 0.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.fbt-divider-blue {
+  background-color: #0055DD;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.fbt-divider-white {
+  background-color: #FFFFFF;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.fbt-divider-black {
+  background-color: #000000;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Hero ── */
+header.masthead {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../assets/img/bg-masthead.jpg");
+}
+
+.masthead-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.masthead-content h1 {
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.masthead-lead {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin-bottom: 0;
+  max-width: 42rem;
+}
+
+@media (min-width: 992px) {
+  .masthead-lead {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .masthead-content h1 {
+    white-space: normal;
+    font-size: 1.75rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .masthead-content h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .masthead-lead {
+    font-size: 0.95rem;
+  }
+}
+
+/* ── Navbar logo (unchanged from user setting) ── */
+.navbar-logo {
+  display: block;
+  height: 2.125rem;
+  width: auto;
+  max-width: 8.5rem;
+  object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .navbar-logo {
+    height: 2.25rem;
+    max-width: 9rem;
+  }
+}
+
+.masthead-divider-bottom {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+#mainNav .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+/* ── About black bg ── */
+.bg-black {
+  background-color: #000 !important;
+}
+
+#about .fbt-divider-white {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Services ── */
+.service-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.service-item p {
+  line-height: 1.65;
+  font-size: 0.925rem;
+}
+
+/* ── Contact (PPT point 20: plain text, no form) ── */
+.contact-grid {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contact-item-label {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0055DD;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item-value {
+  font-family: Merriweather, serif;
+  font-size: 1rem;
+  color: #212529;
+  line-height: 1.5;
+}
+
+.contact-item-value a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.contact-item-value a:hover {
+  color: #0055DD;
+}
+
+@media (min-width: 768px) {
+  .contact-item-value a {
+    white-space: nowrap;
+  }
+}
